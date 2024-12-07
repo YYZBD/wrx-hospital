@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  /*height: 100vh;*/
+  /* fix-bug: 解决超出屏幕长度时候没有背景颜色 */
+  min-height: 100vh;
+  font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #252933;
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+}
+
+ol,ul,li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+/* fix-bug 添加常用css */
+.line-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.line-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.marginT {
+  margin-top: 15px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
