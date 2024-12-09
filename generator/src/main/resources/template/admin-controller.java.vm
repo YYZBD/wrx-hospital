@@ -1,12 +1,12 @@
-package com.markerhub.controller.admin;
+package com.wrx.controller.admin;
 
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ArrayUtil;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.markerhub.common.base.BaseController;
-import com.markerhub.common.lang.Result;
-import com.markerhub.entity.${entity};
-import com.markerhub.service.${entity}Service;
+import com.wrx.common.base.BaseController;
+import com.wrx.common.lang.Result;
+import com.wrx.entity.${entity};
+import com.wrx.service.${entity}Service;
 import jakarta.annotation.Resource;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

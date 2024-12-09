@@ -25,9 +25,12 @@ const logout = () => {
           :ellipsis="false"
           router
       >
-        <h3 class="title">码客在线</h3>
+        <!--项目顶部菜单栏管理-->
+        <h3 class="title">医院预约挂号系统</h3>
         <el-menu-item index="/">首页</el-menu-item>
-        <el-menu-item index="/menu">菜单</el-menu-item>
+        <el-menu-item index="/booking">预约挂号</el-menu-item>
+        <el-menu-item index="/menu">我的预约</el-menu-item>
+        <el-menu-item index="/menu">就诊记录</el-menu-item>
 
         <div style="flex-grow: 1"/>
 
@@ -49,7 +52,8 @@ const logout = () => {
         </template>
       </el-menu>
     </el-header>
-    <el-main style="max-width: 996px; margin: 0 auto; width: 100%;">
+    <!--调整项目所有页面内容展示宽度像素-->
+    <el-main style="max-width: 1200px; margin: 0 auto; width: 100%;">
       <router-view/>
     </el-main>
   </el-container>
