@@ -1,7 +1,11 @@
 package com.wrx.service;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.wrx.entity.Doctor;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.wrx.entity.Schedule;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface DoctorService extends IService<Doctor> {
 
+    List<Doctor> listBySchedule(QueryWrapper<Schedule> wrapper);
 }
