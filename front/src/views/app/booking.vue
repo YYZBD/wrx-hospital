@@ -78,6 +78,7 @@ const submitBookingForm = () => {
   resetBookingForm.value.validate((valid) => {
     if (valid) {
       // console.log('预约成功')
+      console.log('预约成功')
       ElMessage.success('预约成功')
       state.bookingDialog = false
     }
