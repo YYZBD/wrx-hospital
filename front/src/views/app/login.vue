@@ -9,7 +9,7 @@ const route = useRoute()
 const userStore = useUserStore()
 
 const form = reactive({
-  username: 'MarkerHub',
+  username: 'WRX',
   password: '111111'
 })
 const rules = reactive({
